@@ -22,7 +22,7 @@ public class AdEditCustomer2 extends HttpServlet {
 		//Then you typecast it again to an object for JSP to grab and display
 		Integer cusID = new Integer(customerID);
 		
-		//Throw this into model for setString/setInt
+		//Throw this into model for setString/setInt to be used in method or display
 		m.setCustomerID(customerID);
 		System.out.println("customerID: "+customerID);
 		String newName = request.getParameter("newName");
